@@ -1,0 +1,30 @@
+﻿@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Weather.Models.WeatherModel
+
+<div class="container">
+  <table id="today-weather" class="table">
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Minimal temperature:</td>
+        <td>@Model.Main.TemperatureMin</td>
+      </tr>
+      <tr>
+        <td>Maximal temperature:</td>
+        <td>@Model.Main.TemperatureMax</td>
+      </tr>
+      <tr>
+        <td>Rain for 3h</td>
+        <td>@((object)Model.Rain != null ? Model.Rain.RainAmountForTreeHours : "No rain")</td>
+      </tr>
+      <tr>
+        <td>Snow for 3h</td>
+        <td>@((object)Model.Snow != null ? Model.Snow.SnowRainAmountForTreeHours : "No snow")</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

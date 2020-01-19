@@ -1,0 +1,18 @@
+﻿@using System.Web.Http.Validation
+@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model string
+
+<div class="container">
+  @using (Html.BeginForm("Weather", 
+                      "Weather", FormMethod.Get, new { id = "city-form-id", @class = "form-inline" }))
+  {
+    <label for="city-name"> Enter your city name: </label>
+    @Html.TextBox("city", @Model, new {@class="form-control mx-sm-3 mb-2", id="city-name", placeholder="Your city name"} )
+
+    <button type="submit" class="btn btn-primary mb-2">Search</button>
+  }
+
+</div>
