@@ -227,7 +227,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\WeatherController.cs" />
-    <Compile Include="ExternalApi\BaseApiService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,10 +234,6 @@
     <Compile Include="Models\Rain.cs" />
     <Compile Include="Models\Snow.cs" />
     <Compile Include="Models\WeatherModel.cs" />
-    <Compile Include="ExternalApi\OpenWeather\IOpenWeatherApiService.cs" />
-    <Compile Include="ExternalApi\OpenWeather\Models\TodayWeatherModel.cs" />
-    <Compile Include="ExternalApi\OpenWeather\Models\TodayWeatherViewModel.cs" />
-    <Compile Include="ExternalApi\OpenWeather\OpenWeatherApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
